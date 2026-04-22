@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking | Planet Tours and Travelers</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-globe-africa"></i>
+                Planet <span>Tours</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tours.html">Tours</a></li>
+                    <li><a href="hotels.html">Hotels</a></li>
+                    <li><a href="flights.html" class="active">Flights</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="tours.html" class="btn btn-primary">Book Now</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="section" style="background: var(--dark); color: var(--white); padding: 80px 0;">
+            <div class="container">
+                <h1>Flight Reservations</h1>
+                <p>Book local and international flights at the best rates.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="card" style="padding: 30px; margin-bottom: 40px; margin-top: -100px; position: relative;">
+                    <form class="grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                        <div class="form-group">
+                            <label>From</label>
+                            <select>
+                                <option>Juba (JUB)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>To</label>
+                            <select>
+                                <option>Nairobi (NBO)</option>
+                                <option>Entebbe (EBB)</option>
+                                <option>Addis Ababa (ADD)</option>
+                                <option>Dubai (DXB)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Departure Date</label>
+                            <input type="date">
+                        </div>
+                        <div class="form-group">
+                            <label>Passengers</label>
+                            <input type="number" value="1" min="1">
+                        </div>
+                        <div style="display: flex; align-items: flex-end;">
+                            <button type="button" class="btn btn-primary" style="width: 100%;">Search Flights</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div id="flights-list" class="grid">
+                    <!-- Dynamic Content -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

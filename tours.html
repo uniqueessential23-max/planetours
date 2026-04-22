@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours & Packages | Planet Tours and Travelers</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-globe-africa"></i>
+                Planet <span>Tours</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tours.html" class="active">Tours</a></li>
+                    <li><a href="hotels.html">Hotels</a></li>
+                    <li><a href="flights.html">Flights</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="tours.html" class="btn btn-primary">Book Now</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="section" style="background: var(--primary); color: var(--white); padding: 60px 0;">
+            <div class="container">
+                <h1>Tours & Packages</h1>
+                <p>Find your next adventure from our handpicked destinations.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <!-- Filters -->
+                <div class="card flex" style="padding: 20px; margin-bottom: 40px; flex-wrap: wrap;">
+                    <div class="form-group" style="margin-bottom: 0; flex: 1; min-width: 200px;">
+                        <label>Destination</label>
+                        <select id="filter-dest">
+                            <option value="all">All Destinations</option>
+                            <option value="Boma">Boma National Park</option>
+                            <option value="Zanzibar">Zanzibar</option>
+                            <option value="Imatong">Imatong Mountains</option>
+                            <option value="Nile">Nile River</option>
+                        </select>
+                    </div>
+                    <div class="form-group" style="margin-bottom: 0; flex: 1; min-width: 200px;">
+                        <label>Max Price (<span id="price-val">$2000</span>)</label>
+                        <input type="range" id="filter-price" min="0" max="2000" value="2000">
+                    </div>
+                    <div class="form-group" style="margin-bottom: 0; flex: 1; min-width: 200px;">
+                        <label>Sort By</label>
+                        <select id="sort-by">
+                            <option value="recommended">Recommended</option>
+                            <option value="low">Price: Low to High</option>
+                            <option value="high">Price: High to Low</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Grid -->
+                <div id="tours-grid" class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                    <!-- Dynamic Content -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
