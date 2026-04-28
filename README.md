@@ -20,4 +20,5 @@ The site is ready to be deployed on platforms like **Netlify** or **GitHub Pages
 
 ## 📞 Contact
 - **Phone**: 0923348074 / 0924838065
+- **Email**: [thonmaream@gmail.com](mailto:thonmaream@gmail.com)
 - **Location**: Juba Town, South Sudan
